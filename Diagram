@@ -43,8 +43,6 @@ TABLE managers {
 TABLE course {
   id int [pk]
   name varchar
-  subject varchar
-  student int
 }
 
 TABLE subject {
@@ -52,7 +50,6 @@ TABLE subject {
   name varchar
   course int
   Professors int
-  student int
 }
 
 TABLE faculty {
@@ -63,11 +60,18 @@ TABLE faculty {
   managers int
 }
 
+TABLE lecture {
+  id int [pk]
+  time datetime
+  subject int
+  student int
+}
+
 Ref: extrainfo.student > students.id
-Ref: course.student > students.id
-Ref: subject.student > students.id
 Ref: subject.course > course.id
 Ref: subject.Professors > Professors.id
 Ref: faculty.student > students.id
 Ref: faculty.subject > subject.id
 Ref: faculty.managers > managers.id
+Ref: lecture.subject > subject.id
+Ref: lecture.student > students.id
