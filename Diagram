@@ -131,14 +131,13 @@ CREATE Table subject (
   id int NOT NULL,
   name varchar,
   course int,
-  professors int
+  professors int,
+  faculty id
 );
 
 CREATE Table faculty (
   id int NOT NULL,
   name varchar,
-  subject int,
-  student int,
   managers int
 );
 
@@ -151,61 +150,61 @@ CREATE Table lecture (
 
 
 INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
-VALUES (1, 'Tornike', 'Burkhashvili', 12345, 'test1@gmail.com', 'abashidze', '1997/08/12', 'male')
+VALUES (1, 'Tornike', 'Burkhashvili', 12345, 'test1@gmail.com', 'abashidze', '1997/08/12', 'male');
 
 INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
-VALUES (2, 'Shako', 'Tsiklauri', 12346, 'test2@gmail.com', 'vaja-phavela', '1995/02/11', 'male')
+VALUES (2, 'Shako', 'Tsiklauri', 12346, 'test2@gmail.com', 'vaja-phavela', '1995/02/11', 'male');
 
 INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
-VALUES (3, 'Tatia', 'Gujabidze', 12347, 'test3@gmail.com', 'Kandelaki', '1990/09/07', 'female')
+VALUES (3, 'Tatia', 'Gujabidze', 12347, 'test3@gmail.com', 'Kandelaki', '1990/09/07', 'female');
 
 INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
-VALUES (1, 'Irakli', 'Abashidze', 12348, 'test4@gmail.com', 'Kekelidze', '1987/01/07', 'male', '09876543', 'Associated Professor')
+VALUES (1, 'Irakli', 'Abashidze', 12348, 'test4@gmail.com', 'Kekelidze', '1987/01/07', 'male', '09876543', 'Associated Professor');
 
 INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
-VALUES (2, 'Lika', 'Gurgenidze', 12349, 'test5@gmail.com', 'Nutsubidze', '1983/01/06', 'female', '09876542', 'Senior assistant')
+VALUES (2, 'Lika', 'Gurgenidze', 12349, 'test5@gmail.com', 'Nutsubidze', '1983/01/06', 'female', '09876542', 'Senior assistant');
 
 INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
-VALUES (3, 'Sulkhani', 'Amashukeli', 12312, 'test6@gmail.com', 'Kakabadze', '1975/01/02', 'male', '09876567', 'Junior assistant')
+VALUES (3, 'Sulkhani', 'Amashukeli', 12312, 'test6@gmail.com', 'Kakabadze', '1975/01/02', 'male', '09876567', 'Junior assistant');
 
 INSERT INTO Managers (id, name, surname, personalid, email, address, dateofbirth, gender)
-VALUES (1, 'Shota', 'Khurtsidze', 098765, 'test7@gmail.com', 'Kutaisi', '1998/04/01', 'male')
+VALUES (1, 'Shota', 'Khurtsidze', 098765, 'test7@gmail.com', 'Kutaisi', '1998/04/01', 'male');
 
 INSERT INTO Managers (id, name, surname, personalid, email, address, dateofbirth, gender)
 VALUES (2, 'Nino', 'Akubardia', 198765, 'test8@gmail.com', 'Iosebidze', '1986/07/01', 'female')
-
+;
 INSERT INTO extrainfo (id, secondaddress, aptnumber, student)
-VALUES (1, 'Kvareli', 12, 1)
+VALUES (1, 'Kvareli', 12, 1);
 
 INSERT INTO course (id, name)
-VALUES (1, 'freshman')
+VALUES (1, 'freshman');
 
 INSERT INTO course (id, name)
-VALUES (2, 'sophomore')
+VALUES (2, 'sophomore');
 
 INSERT INTO course (id, name)
-VALUES (3, 'junior')
+VALUES (3, 'junior');
 
 INSERT INTO course (id, name)
-VALUES (4, 'senior')
+VALUES (4, 'senior');
 
-INSERT INTO subject (id, name, course, professors)
-VALUES (1, 'Front-end', 1, 1)
+INSERT INTO subject (id, name, course, professors, faculty)
+VALUES (1, 'Front-end', 1, 1, 1);
 
-INSERT INTO subject (id, name, course, professors)
-VALUES (2, 'Back-end', 2, 2)
+INSERT INTO subject (id, name, course, professors, faculty)
+VALUES (2, 'Back-end', 2, 2, 1);
 
-INSERT INTO subject (id, name, course, professors)
-VALUES (3, 'GM', 3, 3)
+INSERT INTO subject (id, name, course, professors, faculty)
+VALUES (3, 'GM', 3, 3, 2);
 
-INSERT INTO subject (id, name, course, professors)
-VALUES (4, 'QA', 4, 3)
+INSERT INTO subject (id, name, course, professors, faculty)
+VALUES (4, 'QA', 4, 3, 3);
 
-INSERT INTO faculty (id, name, subject, student, managers)
-VALUES (1, 'Computer sience', 2, 1, 2)
+INSERT INTO faculty (id, name, managers)
+VALUES (1, 'Computer sience', 2);
 
-INSERT INTO faculty (id, name, subject, student, managers)
-VALUES (2, 'Business', 1, 2, 1)
+INSERT INTO faculty (id, name, managers)
+VALUES (2, 'Business', 1);
 
-INSERT INTO faculty (id, name, subject, student, managers)
-VALUES (3, 'Literature', 3, 3, 1)
+INSERT INTO faculty (id, name, managers)
+VALUES (3, 'Literature', 1);
