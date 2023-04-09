@@ -167,3 +167,9 @@ VALUES (2, 'Lika', 'Gurgenidze', 12349, 'test5@gmail.com', 'Nutsubidze', '1983/0
 
 INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
 VALUES (3, 'Sulkhani', 'Amashukeli', 12312, 'test6@gmail.com', 'Kakabadze', '1975/01/02', 'male', '09876567', 'Junior assistant')
+
+INSERT INTO Managers (id, name, surname, personalid, email, address, dateofbirth, gender)
+VALUES (1, 'Shota', 'Khurtsidze', 098765, 'test7@gmail.com', 'Kutaisi', '1998/04/01', 'male')
+
+INSERT INTO Managers (id, name, surname, personalid, email, address, dateofbirth, gender)
+VALUES (2, 'Nino', 'Akubardia', 198765, 'test8@gmail.com', 'Iosebidze', '1986/07/01', 'female')
