@@ -1,0 +1,16 @@
+TABLE students {
+  id int [pk]
+  name varchar
+  surname varchar
+  personalid int
+  email varchar
+  address varchar
+  dateofbirth datetime
+  gender varchar
+}
+
+TABLE extrainfo {
+  id int [pk]
+  secondaddress varchar
+  aptnumber int
+}
