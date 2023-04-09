@@ -208,3 +208,7 @@ VALUES (2, 'Business', 1);
 
 INSERT INTO faculty (id, name, managers)
 VALUES (3, 'Literature', 1);
+
+
+INSERT INTO lecture (id, lecturetime, subject, student)
+VALUES (1, '2023/04/9', 1, 1)
