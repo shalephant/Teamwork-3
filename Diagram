@@ -60,4 +60,14 @@ TABLE faculty {
   name varchar
   subject int
   student int
+  managers int
 }
+
+Ref: extrainfo.student > students.id
+Ref: course.student > students.id
+Ref: subject.student > students.id
+Ref: subject.course > course.id
+Ref: subject.Professors > Professors.id
+Ref: faculty.student > students.id
+Ref: faculty.subject > subject.id
+Ref: faculty.managers > managers.id
