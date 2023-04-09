@@ -200,3 +200,12 @@ VALUES (3, 'GM', 3, 3)
 
 INSERT INTO subject (id, name, course, professors)
 VALUES (4, 'QA', 4, 3)
+
+INSERT INTO faculty (id, name, subject, student, managers)
+VALUES (1, 'Computer sience', 2, 1, 2)
+
+INSERT INTO faculty (id, name, subject, student, managers)
+VALUES (2, 'Business', 1, 2, 1)
+
+INSERT INTO faculty (id, name, subject, student, managers)
+VALUES (3, 'Literature', 3, 3, 1)
