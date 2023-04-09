@@ -158,3 +158,12 @@ VALUES (2, 'Shako', 'Tsiklauri', 12346, 'test2@gmail.com', 'vaja-phavela', '1995
 
 INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
 VALUES (3, 'Tatia', 'Gujabidze', 12347, 'test3@gmail.com', 'Kandelaki', '1990/09/07', 'female')
+
+INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
+VALUES (1, 'Irakli', 'Abashidze', 12348, 'test4@gmail.com', 'Kekelidze', '1987/01/07', 'male', '09876543', 'Associated Professor')
+
+INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
+VALUES (2, 'Lika', 'Gurgenidze', 12349, 'test5@gmail.com', 'Nutsubidze', '1983/01/06', 'female', '09876542', 'Senior assistant')
+
+INSERT INTO professors (id, name, surname, personalid, email, address, dateofbirth, gender, accountnumber, level)
+VALUES (3, 'Sulkhani', 'Amashukeli', 12312, 'test6@gmail.com', 'Kakabadze', '1975/01/02', 'male', '09876567', 'Junior assistant')
