@@ -173,3 +173,6 @@ VALUES (1, 'Shota', 'Khurtsidze', 098765, 'test7@gmail.com', 'Kutaisi', '1998/04
 
 INSERT INTO Managers (id, name, surname, personalid, email, address, dateofbirth, gender)
 VALUES (2, 'Nino', 'Akubardia', 198765, 'test8@gmail.com', 'Iosebidze', '1986/07/01', 'female')
+
+INSERT INTO extrainfo (id, secondaddress, aptnumber, student)
+VALUES (1, 'Kvareli', 12, 1)
