@@ -13,4 +13,51 @@ TABLE extrainfo {
   id int [pk]
   secondaddress varchar
   aptnumber int
+  student int
+}
+
+TABLE Professors {
+  id int [pk]
+  name varchar
+  surname varchar
+  personalid int
+  email varchar
+  address varchar
+  dateofbirth datetime
+  gender varchar
+  accountnumber varchar
+  level varchar
+}
+
+TABLE managers {
+  id int [pk]
+  name varchar
+  surname varchar
+  personalid int
+  email varchar
+  address varchar
+  dateofbirth datetime
+  gender varchar
+}
+
+TABLE course {
+  id int [pk]
+  name varchar
+  subject varchar
+  student int
+}
+
+TABLE subject {
+  id int [pk]
+  name varchar
+  course int
+  Professors int
+  student int
+}
+
+TABLE faculty {
+  id int [pk]
+  name varchar
+  subject int
+  student int
 }
