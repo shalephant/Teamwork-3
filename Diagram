@@ -90,3 +90,61 @@ CREATE Table students (
   dateofbirth datetime,
   gender varchar
 );
+
+CREATE Table extrainfo  (
+  id int NOT NULL,
+  secondaddress varchar,
+  aptnumber int,
+  student int
+);
+
+CREATE Table professors (
+  id int NOT NULL,
+  name varchar,
+  surname varchar,
+  personalid int,
+  email varchar,
+  address varchar,
+  dateofbirth datetime,
+  gender varchar,
+  accountnumber varchar,
+  level varchar
+);
+
+CREATE Table managers (
+  id int NOT NULL,
+  name varchar,
+  surname varchar,
+  personalid int,
+  email varchar,
+  address varchar,
+  dateofbirth datetime,
+  gender varchar
+);
+
+CREATE Table course (
+  id int NOT NULL,
+  name varchar
+);
+
+CREATE Table subject (
+  id int NOT NULL,
+  name varchar,
+  course int,
+  professors int
+);
+
+CREATE Table faculty (
+  id int NOT NULL,
+  name varchar,
+  subject int,
+  student int,
+  managers int
+);
+
+CREATE Table lecture (
+  id int NOT NULL,
+  lecturetime datetime,
+  subject int,
+  student int
+);
