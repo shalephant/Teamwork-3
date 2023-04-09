@@ -176,3 +176,15 @@ VALUES (2, 'Nino', 'Akubardia', 198765, 'test8@gmail.com', 'Iosebidze', '1986/07
 
 INSERT INTO extrainfo (id, secondaddress, aptnumber, student)
 VALUES (1, 'Kvareli', 12, 1)
+
+INSERT INTO course (id, name)
+VALUES (1, 'freshman')
+
+INSERT INTO course (id, name)
+VALUES (2, 'sophomore')
+
+INSERT INTO course (id, name)
+VALUES (3, 'junior')
+
+INSERT INTO course (id, name)
+VALUES (4, 'senior')
