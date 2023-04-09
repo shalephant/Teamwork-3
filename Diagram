@@ -75,3 +75,18 @@ Ref: faculty.subject > subject.id
 Ref: faculty.managers > managers.id
 Ref: lecture.subject > subject.id
 Ref: lecture.student > students.id
+
+
+
+/*   MySQL Diagram   */
+
+CREATE Table students (
+  id int NOT NULL,
+  name varchar,
+  surname varchar,
+  personalid int,
+  email varchar,
+  address varchar,
+  dateofbirth datetime,
+  gender varchar
+);
