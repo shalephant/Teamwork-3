@@ -148,3 +148,13 @@ CREATE Table lecture (
   subject int,
   student int
 );
+
+
+INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
+VALUES (1, 'Tornike', 'Burkhashvili', 12345, 'test1@gmail.com', 'abashidze', '1997/08/12', 'male')
+
+INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
+VALUES (2, 'Shako', 'Tsiklauri', 12346, 'test2@gmail.com', 'vaja-phavela', '1995/02/11', 'male')
+
+INSERT INTO students (id, name, surname, personalid, email, address, dateofbirth, gender)
+VALUES (3, 'Tatia', 'Gujabidze', 12347, 'test3@gmail.com', 'Kandelaki', '1990/09/07', 'female')
