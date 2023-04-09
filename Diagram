@@ -188,3 +188,15 @@ VALUES (3, 'junior')
 
 INSERT INTO course (id, name)
 VALUES (4, 'senior')
+
+INSERT INTO subject (id, name, course, professors)
+VALUES (1, 'Front-end', 1, 1)
+
+INSERT INTO subject (id, name, course, professors)
+VALUES (2, 'Back-end', 2, 2)
+
+INSERT INTO subject (id, name, course, professors)
+VALUES (3, 'GM', 3, 3)
+
+INSERT INTO subject (id, name, course, professors)
+VALUES (4, 'QA', 4, 3)
